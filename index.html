@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <audio src="sound/drop.mp3"></audio>
+    <div class="bgbox">
+        <div class="inner">
+            <div class="logo"></div>
+            <div class="login">
+                <div class="title"></div>
+                <div class="account">
+                    <span class="login-span">玩家账号 ：</span>
+                    <input type="text" class="login-input">
+                </div>
+                <div class="password">
+                    <span class="login-span">玩家密码 ：</span>
+                    <input type="password" class="login-input">
+                </div>
+                <div class="repeat">
+                    <span class="login-span">重复密码 ：</span>
+                    <input type="password" class="login-input">
+                </div>
+                <div class="enter"></div>
+            </div>
+            <div class="renwu"></div>
+        </div>
+    </div>
+    <div class="game-bg">
+        <div class="inner">
+            <div class="role">
+                <div class="left">
+                    <div class="img"></div>
+                    <span></span>
+                </div>
+                <div class="right">
+                    <div class="img"></div>
+                    <span></span>
+                </div>
+            </div>
+            <canvas width="450" height="450" id="canvas"></canvas>
+            <!--<canvas width="300" height="300" id="clock"></canvas>-->
+            <div class="xzms"></div>
+            <ul class="choose-list">
+                <li id="AI">人机模式</li>
+                <li id="pp">人人模式</li>
+            </ul>
+            <div class="win"></div>
+            <div class="qipu">生成棋谱</div>
+            <div class="reset"></div>
+        </div>
+    </div>
+</body>
+</html>
